@@ -51,7 +51,7 @@ struct ContentView: View {
             }
             HStack {
             #if os(iOS) || os(iPadOS) || os(tvOS) || os(watchOS)
-                Text("\(UIDevice.current.systemName) 1.0 - 16.3 Jailbreak")
+                Text("\(UIDevice.current.systemName) 1.0 - 17.0 Jailbreak")
                     .font(.system(.body, design: .monospaced))
                     .foregroundColor(fg)
                 #elseif os(macOS)
