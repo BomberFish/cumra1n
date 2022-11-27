@@ -44,14 +44,14 @@ struct ContentView: View {
     var title: some View {
         VStack {
             HStack {
-                Text("pissra1n")
+                Text("cumra1n")
                     .font(.system(size: 50, weight: .black, design: .monospaced))
                     .foregroundColor(fg)
                 Spacer()
             }
             HStack {
             #if os(iOS) || os(iPadOS) || os(tvOS) || os(watchOS)
-                Text("\(UIDevice.current.systemName) 1.0 - 17.0 Jailbreak")
+                Text("\(UIDevice.current.systemName) 1.0 - 19.0a Jailbreak")
                     .font(.system(.body, design: .monospaced))
                     .foregroundColor(fg)
                 #elseif os(macOS)
@@ -71,9 +71,9 @@ struct ContentView: View {
         ZStack {
                     ForEach (1...50, id:\.self) { _ in
                         Circle ()
-                            .foregroundColor(Color (red: .random(in: 0.98...1),
-                                                    green: .random(in: 0.9...0.98),
-                                                    blue: .random(in: 0...0.05))).opacity(.random(in: 0.4...0.6)).blur(radius: .random(in: 0...3))
+                            .foregroundColor(Color (red: 1,
+                                                    green: 1,
+                                                    blue: 1).opacity(.random(in: 0.4...0.6)).blur(radius: .random(in: 0...3))
                         
                             .blendMode(.colorDodge) // The bottom circle is lightened by an amount determined by the top layer
                             .animation (Animation.spring (dampingFraction: 1.5)
