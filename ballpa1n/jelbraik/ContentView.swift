@@ -177,7 +177,7 @@ struct ContentView: View {
             } label: {
                 Text(currentStage == 0 ? "Jailbreak" : finished ? "Respring" : "Jailbreaking")
                     .font(.system(.title3, design: .monospaced))
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .padding()
                     .background(
                         Capsule()
