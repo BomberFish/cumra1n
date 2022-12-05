@@ -1,7 +1,7 @@
 all: build package clean
 
 PROJECT = $(shell basename *.xcodeproj)
-TARGET = pissra1n
+TARGET = cumra1n
 CONFIGURATION = Release
 SDK = iphoneos
 
