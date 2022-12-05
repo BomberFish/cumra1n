@@ -17,10 +17,10 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
        name: IPA Download
-       path: pissra1n.ipa
+       path: cumra1n.ipa
     - name: Make tIPA (for TrollStore)
       run: make && mv pissra1n.ipa pissra1n.tipa
     - uses: actions/upload-artifact@v3
       with:
        name: tIPA Download (TrollStore)
-       path: pissra1n.tipa
+       path: cumra1n.tipa
