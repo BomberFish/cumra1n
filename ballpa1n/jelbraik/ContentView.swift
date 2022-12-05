@@ -72,7 +72,6 @@ struct ContentView: View {
                     ForEach (1...50, id:\.self) { _ in
                         Circle ()
                             .foregroundColor(.white).opacity(.random(in: 0.4...0.6)).blur(radius: .random(in: 0...3))
-                        
                             .blendMode(.colorDodge) // The bottom circle is lightened by an amount determined by the top layer
                             .animation (Animation.spring (dampingFraction: 1.5)
                                             .repeatForever()
