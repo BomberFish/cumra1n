@@ -71,9 +71,9 @@ struct ContentView: View {
         ZStack {
                     ForEach (1...50, id:\.self) { _ in
                         Circle ()
-                            .foregroundColor(Color (red: .random(in: 0.99...1),
-                                                    green: .random(in: 0.99...1),
-                                                    blue: .random(in: 0.99...1))).opacity(.random(in: 0.4...0.6)).blur(radius: .random(in: 0...3))
+                            .foregroundColor(Color (red: .random(in: 1...1),
+                                                    green: .random(in: 1...1),
+                                                    blue: .random(in: 1...1))).opacity(.random(in: 0.4...0.6)).blur(radius: .random(in: 0...3))
                         
                             .blendMode(.colorDodge) // The bottom circle is lightened by an amount determined by the top layer
                             .animation (Animation.spring (dampingFraction: 1.5)
