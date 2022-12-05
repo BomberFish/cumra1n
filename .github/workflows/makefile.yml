@@ -19,7 +19,7 @@ jobs:
        name: IPA Download
        path: cumra1n.ipa
     - name: Make tIPA (for TrollStore)
-      run: make && mv pissra1n.ipa pissra1n.tipa
+      run: make && mv cumra1n.ipa cumra1n.tipa
     - uses: actions/upload-artifact@v3
       with:
        name: tIPA Download (TrollStore)

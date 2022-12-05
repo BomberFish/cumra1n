@@ -2,3 +2,5 @@
 build
 *.ipa
 *.tipa
+# mac stuff
+.DS_Store
